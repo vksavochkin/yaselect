@@ -38,7 +38,7 @@ jQuery.fn.yaselect = function(options) {
         if (jselect.is(':hidden')) {
           jselect.show();
           toggle();
-          setTimeout(function() { jselect.focus(); }); /* avoid trampling confusion with triggered blur */
+          setTimeout(function() { jselect.focus(); }, 50); /* avoid trampling confusion with triggered blur */
         } else {
           confirm(true);
         }
